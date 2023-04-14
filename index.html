@@ -1,25 +1,41 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8">
   <title>My Sum 2 Algo</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
   <!-- Scripts that don't need to manipulate the DOM go here -->
   <script>
     <!-- This is an embedded script -->
-    console.log("Hello world!");
+    console.log("twoSum([2,7,11,15], 9)");
   </script>
   <!-- This is a linked script -->
-  <script type="text/javascript" src="sum2.js"></script>
+
+
 </head>
 
 <body>
-<h1></h1>
+<h1 id="p1">Test 1</h1>
+<h1 id="p2">Test 2</h1>
+<script type="module" src="support/benchmark.js"></script>
+
+
 <!-- Scripts that need to manipulate the DOM go here -->
+<script type="module" src="sum2.js"></script>
+<script type="module" src="sum2-map.js"></script>
+<script type="module" src="sum2-object.js"></script>
+
   <script>
-    document.querySelector('h1').innerHTML = "Hello again!";
+    document.querySelector('#p1').innerHTML = "twoSum([2,7,11,15], 9)";
   </script>
-  <script src="sum2.js"></script>
+
+<script>
+    document.querySelector('#p2').innerHTML = "twoSumMap([2,7,11,15], 9)";
+  </script>
+
+
 </body>
 
 </html>
